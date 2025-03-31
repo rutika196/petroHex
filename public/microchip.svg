@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- Dark circular background -->
+  <circle cx="12" cy="12" r="12" fill="#1e1e1e"/>
+  
+  <!-- Microchip icon -->
+  <rect x="4" y="4" width="16" height="16" rx="2" ry="2" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></rect>
+  <rect x="9" y="9" width="6" height="6" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></rect>
+  <line x1="9" y1="1" x2="9" y2="4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+  <line x1="15" y1="1" x2="15" y2="4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+  <line x1="9" y1="20" x2="9" y2="23" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+  <line x1="15" y1="20" x2="15" y2="23" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+  <line x1="20" y1="9" x2="23" y2="9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+  <line x1="20" y1="14" x2="23" y2="14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+  <line x1="1" y1="9" x2="4" y2="9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+  <line x1="1" y1="14" x2="4" y2="14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+</svg>
