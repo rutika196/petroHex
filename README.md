@@ -1,52 +1,77 @@
-# React Chatbot
+# PetroHex Chat App
 
-A simple chatbot web application built with React and Tailwind CSS.
+A modern, sleek chatbot web application with a stylish Apple-inspired UI.
 
 ## Features
 
-- Clean, modern UI using Tailwind CSS
-- Real-time chat interface
-- Demo responses from the chatbot
-- Responsive design
+- Mobile-first responsive design
+- Dark mode interface with glossy elements
+- Real-time typing indicators
+- AI-powered chat mode (OpenAI integration)
+- Basic keyword response mode (offline fallback)
+- Timestamp displays for all messages
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
+- Node.js 14+ and npm
 
-- Node.js (v14 or higher)
-- npm
-
-### Installation
+## Local Development
 
 1. Clone the repository
-```bash
-git clone <repository-url>
-cd chatbot
-```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Create a `.env` file with your OpenAI API key:
+   ```
+   VITE_OPENAI_API_KEY=your_openai_api_key_here
+   ```
+4. Start the development server:
+   ```
+   npm run dev
+   ```
 
-2. Install dependencies
-```bash
-npm install
-```
+## Deploying to Vercel
 
-3. Start the development server
-```bash
-npm run dev
-```
+### Method 1: Vercel CLI (requires access rights)
 
-4. Open your browser and navigate to `http://localhost:5173`
+1. Install Vercel CLI:
+   ```
+   npm install -g vercel
+   ```
+2. Login to Vercel:
+   ```
+   vercel login
+   ```
+3. Deploy the project:
+   ```
+   vercel
+   ```
 
-## Customization
+### Method 2: Vercel Web Interface (Recommended)
 
-To extend this demo into a fully functional chatbot:
+1. Push your repository to GitHub
+2. Go to [Vercel](https://vercel.com)
+3. Click "New Project"
+4. Import your GitHub repository
+5. Configure the project:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+   - Framework Preset: Vite
+6. Add environment variables:
+   - Name: `VITE_OPENAI_API_KEY`
+   - Value: Your OpenAI API key
+7. Click "Deploy"
 
-1. Replace the random responses in `App.tsx` with actual API calls to a chatbot backend
-2. Add authentication if needed
-3. Implement additional features like message history, typing indicators, etc.
+## Environment Variables
 
-## Technologies Used
+| Variable | Description |
+|----------|-------------|
+| `VITE_OPENAI_API_KEY` | Your OpenAI API key for AI chat responses |
 
-- React.js
-- TypeScript
-- Tailwind CSS
-- Vite
+## Technologies
+
+- React 19 with TypeScript
+- Vite 6
+- Custom CSS (no UI frameworks)
+- OpenAI API
