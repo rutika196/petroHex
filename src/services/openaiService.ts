@@ -68,7 +68,7 @@ export const generateChatResponse = async (messages: ChatMessage[]): Promise<str
 // Helper function to convert our app messages to OpenAI format
 export const formatMessagesForOpenAI = (
   messages: Array<{ text: string; isUser: boolean }>, 
-  systemPrompt: string = 'You are Amigo GPT, a helpful assistant. Be friendly, concise, and helpful.'
+  systemPrompt: string = 'You are PatroHex, a helpful assistant. Be friendly, concise, and helpful.'
 ): ChatMessage[] => {
   // Add the system message as the first message
   const formattedMessages: ChatMessage[] = [

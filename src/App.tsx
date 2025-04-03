@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
 import { generateChatResponse, formatMessagesForOpenAI } from './services/openaiService'
 
@@ -12,7 +12,7 @@ interface Message {
 function App() {
   const [messages, setMessages] = useState<Message[]>([
     {
-      text: "Hi there! I'm PetroHex. How can I help you today?",
+      text: "Hi there! I'm PatroHex. How can I help you today?",
       isUser: false,
       timestamp: getCurrentTime()
     }
@@ -55,7 +55,7 @@ function App() {
         // Use OpenAI API for dynamic responses
         const formattedMessages = formatMessagesForOpenAI(
           [...messages, userMessage],
-          'You are PetroHex, a friendly AI assistant. Keep your responses concise (under 100 words) and helpful. Maintain a cheerful tone.'
+          'You are PatroHex, a friendly AI assistant. Keep your responses concise (under 100 words) and helpful. Maintain a cheerful tone.'
         );
         
         botResponse = await generateChatResponse(formattedMessages);
@@ -75,7 +75,7 @@ function App() {
         } else if (lowercaseInput.includes('weather')) {
           botResponse = "I don't have access to real-time weather data, but I hope it's nice where you are!";
         } else if (lowercaseInput.includes('name')) {
-          botResponse = "My name is PetroHex, your friendly AI assistant!";
+          botResponse = "My name is PatroHex, your friendly AI assistant!";
         } else if (lowercaseInput.includes('help')) {
           botResponse = "I can chat with you about various topics. Just type your question or comment!";
         } else {
@@ -119,7 +119,7 @@ function App() {
                 d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
             </svg>
           </div>
-          <h1 className="bot-title">PetroHex</h1>
+          <h1 className="bot-title">PatroHex</h1>
           
           {/* API Mode Toggle */}
           <div className="api-toggle">
@@ -155,7 +155,7 @@ function App() {
           {/* Typing indicator */}
           {isTyping && (
             <div className="typing-indicator">
-              PetroHex is typing
+              PatroHex is typing
               <span className="typing-dot">.</span>
               <span className="typing-dot">.</span>
               <span className="typing-dot">.</span>
